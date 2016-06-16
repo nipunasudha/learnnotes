@@ -10,7 +10,7 @@ ls
 	-l
 	returns the longer version
 	-alt
-	
+
 pwd
 ------------currrent absolute path (print working directory)
 cd
@@ -43,3 +43,8 @@ echo "Nipuna" > mytext.txt
 ------------prints into the text file
 cat mytext.txt
 ------------reads and prints data from file.
+rmdir myfolder
+-----------------remove folder
+rm -rf myfolder
+-f = to ignore non-existent files, never prompt
+-r = to remove directories and their contents recursively
