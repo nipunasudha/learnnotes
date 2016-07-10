@@ -1,0 +1,44 @@
+Variables----------------
+$primary-color: #333;
+
+Nesting-----------------
+Just do it.
+
+Partials----------------
+save _partialName.scss
+and 
+@import 'partialName';
+
+Mixins------------------
+You need a mixin set. This is like function calling.
+
+++++++ Decleration
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
++++++ and use it!
+.box { 
+	@include border-radius(10px);
+}
+
+Extend-------------------
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message; <----------- extended
+  border-color: green;
+}
+
+Math---------------------
+
+ width: 600px / 960px * 100%;  <-----returns a percentage
+ width: 600px / 2;  <-----returns a px value

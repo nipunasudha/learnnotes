@@ -18,9 +18,9 @@ Requesting & Displaying a JSON response
 			})
 		})
 	</script>
-	
+
 -----------------------------------------------------
-Responding to a JSON request (In a Laravel Controller)	
+Responding to a JSON request (In a Laravel Controller)
 
 	public function test(){
       return response()->json(['name' => 'Nipuna Sudharaka', 'drink' => 'Coffee']);
@@ -53,16 +53,16 @@ POST from AJAX to Laravel
 
 ##### Global way to avoid '500 internal server error' in Laravel:-
 
-	In this way we will add token for globally work with ajax call or post. 
+	In this way we will add token for globally work with ajax call or post.
 	so no need to send it with data post.
 
-	1. Add a meta tag to your layout header :- csrf_token() will be the 
-	same as "_token" CSRF token that Laravel automatically adds in the 
+	1. Add a meta tag to your layout header :- csrf_token() will be the
+	same as "_token" CSRF token that Laravel automatically adds in the
 	hidden input on every form.
 
 			<meta name="_token" content="{!! csrf_token() !!}"/>
 
-	2. Now add below code to footer of your layout, or where it will set 
+	2. Now add below code to footer of your layout, or where it will set
 	for globally or whole site pages. this will pass token to each ajax request.
 
 			<script type="text/javascript">
@@ -108,8 +108,3 @@ DELETE from AJAX to Laravel
 		}
 	  })
 	})
-
-
-
-
-
